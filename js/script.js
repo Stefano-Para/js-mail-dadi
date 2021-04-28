@@ -21,7 +21,7 @@ for (var i = 0; i < verifiedEmails.length; i++) {
 
 if (listed == true) {
     var message = "Congratulazioni! Ti sei registrato."
-    document.getElementById("stamp").innerHTML = message + "<a href='\"id=\"gioco_dadi\"\"'>Click here to play GIOCO DADI</a>";
+    document.getElementById("stamp").innerHTML = message;
 } else {
     var message = "Errore: accesso negato."
     document.getElementById("stamp").innerHTML = message;
@@ -41,4 +41,23 @@ if (listed == true) {
  esempio: XXX@email.it è riconosciuta
           XXX@prova.com non è riconosciuta */
 
+
+
+
+//   GIOCO DADI:
+var x = parseInt(Math.floor(Math.random() * 6));
+
+var y = parseInt(Math.floor(Math.random() * 6));
+
+var message;
+    if (x < y) {
+        console.log(message) = "Hai vinto!"
+        document.getElementById("risolutato").innerHTML = "Hai vinto!"
+    }
+    if (x > y) {
+        document.getElementById("risolutato").innerHTML = "Hai perso!"
+    }
+    if (x == y) {
+        document.getElementById("risolutato").innerHTML = "Pareggio!"
+    }
 
