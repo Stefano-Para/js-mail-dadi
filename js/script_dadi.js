@@ -10,16 +10,16 @@ console.log("TU ha totalizzato " + y + " punti.")
 
 var risultato;
 
-    if (x < y) {
-       
+    if (x < y) {        
+        console.log("Hai vinto!");
         document.getElementById("risultato").innerHTML = "Hai vinto!"
     }
-    if (x > y) {
-        
+    if (x > y) {        
+        console.log("Hai perso!");
         document.getElementById("risultato").innerHTML = "Hai perso!"
     }
-    if (x == y) {
-        
+    if (x == y) {        
+        console.log("Pareggio!");
         document.getElementById("risultato").innerHTML = "Pareggio!"
     }
 
