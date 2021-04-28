@@ -21,7 +21,7 @@ for (var i = 0; i < verifiedEmails.length; i++) {
 
 if (listed == true) {
     var message = "Congratulazioni! Ti sei registrato."
-    document.getElementById("stamp").innerHTML = message;
+    document.getElementById("stamp").innerHTML = message + "<a href='\"id=\"gioco_dadi\"\"'>Click here to play GIOCO DADI</a>";
 } else {
     var message = "Errore: accesso negato."
     document.getElementById("stamp").innerHTML = message;
@@ -40,3 +40,5 @@ if (listed == true) {
 
  esempio: XXX@email.it è riconosciuta
           XXX@prova.com non è riconosciuta */
+
+
