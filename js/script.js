@@ -18,6 +18,7 @@ for (var i = 0; i < verifiedEmails.length; i++) {
         listed = true;
     }
 }
+console.log(listed)
 
 if (listed == true) {
     var message = "Congratulazioni! Ti sei registrato."
@@ -45,19 +46,5 @@ if (listed == true) {
 
 
 //   GIOCO DADI:
-var x = parseInt(Math.floor(Math.random() * 6));
 
-var y = parseInt(Math.floor(Math.random() * 6));
-
-var message;
-    if (x < y) {
-        console.log(message) = "Hai vinto!"
-        document.getElementById("risolutato").innerHTML = "Hai vinto!"
-    }
-    if (x > y) {
-        document.getElementById("risolutato").innerHTML = "Hai perso!"
-    }
-    if (x == y) {
-        document.getElementById("risolutato").innerHTML = "Pareggio!"
-    }
 

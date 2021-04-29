@@ -1,9 +1,9 @@
 //   GIOCO DADI:
-var x = Math.floor(Math.random() * 6);
+var x = Math.floor(Math.random() * 6) + 1;
 console.log("PC ha totalizzato " + x + " punti.")
     document.getElementById("pc").innerHTML = "PC ha totalizzato: " + x + " punti";
 
-var y = Math.floor(Math.random() * 6);
+var y = Math.floor(Math.random() * 6) + 1;
 console.log("TU ha totalizzato " + y + " punti.")
     document.getElementById("tu").innerHTML = "TU hai totalizzato: " + y + " punti";
 
